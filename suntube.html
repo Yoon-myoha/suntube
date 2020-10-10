@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang='ko'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>SunTube</title>
+    <link href='bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href='centerblock.css'>
+  </head>
+  <body>
+    <div class='jumbotron'>
+      <div class='container-fluid'>
+        <div class='text-center'>
+          <div class'text-center'>
+            <img src='main.jpg' width='200' class='img=rounded'>
+          </div>
+          <h2>순돌위키
+          <br>
+          <br>선바님 영상
+          <br>
+          <br>추천해주세요!
+          </h2>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript'>
+
+                              var tt = 0;
+                              var qq = 0;
+                              var rs = 0;
+                              var rs2 = 0;
+                              var rst = 0;
+                              var stt = 0;
+    </script>
+    <script>
+
+            function favmc(event) {
+              if(tt >= 6 && rs < 64 && rs < 32){
+              ga('send', 'event', {
+                eventCategory: 'favorite',
+                eventAction: 'male',
+                eventLabel: 'oneway'
+              });
+            }
+            }
+              function ftmc(event) {
+                ga('send', 'event', {
+                  eventCategory: 'linked',
+                  eventAction: 'ftm',
+                  eventLabel: 'link'
+                });
+              }
+
+
+            function c11(){
+              if (tt == 0){
+                rs += 0;
+              }
+              else if (tt == 1){
+                rs += 0;
+              }
+              else if (tt == 2){
+                rs += 0;
+              }
+              else if (tt == 3){
+                rs += 0;
+              }
+              else if (tt == 4){
+                rs += 0;
+              }
+              else if (tt == 5){
+                rs += 0;
+              }
+              else if (tt == 6){
+                rs += 0;
+              }
+                else{
+                  rs += 0;
+                }
+            }
+
+            function c12(){
+              if (tt ==0){
+                rs += 64;
+                qq += 1;
+              }
+              else if (tt ==1){
+                rs += 32;
+              }
+              else if (tt ==2){
+                rs += 16;
+              }
+              else if (tt ==3){
+                rs += 8;
+              }
+              else if (tt ==4){
+                rs += 4;
+              }
+              else if (tt ==5){
+                rs += 2;
+              }
+              else if (tt ==6){
+                rs += 1;
+              }
+              else{
+                rs += 0;
+              }
+            }
+            function qqc(){
+              if (tt == 0 && qq < 1){
+                document.getElementedById('qs').innerHTML = '질문1';
+              }
+              else if (tt == 1 && qq < 1){
+                document.getElementedById('qs').innerHTML = '질문2';
+              }
+              else if (tt == 2 && qq < 1){
+                document.getElementedById('qs').innerHTML = '질문3';
+              }
+              else if (tt == 3 && qq < 1){
+                document.getElementedById('qs').innerHTML = '질문4';
+              }
+              else if (tt == 4 && qq < 1){
+                document.getElementedById('qs').innerHTML = '질문5';
+              }
+              else if (tt == 5 && qq < 1){
+                document.getElementedById('qs').innerHTML = '질문6';
+              }
+              else if (tt >= 6 && qq < 1){
+                document.getElementedById('qs').innerHTML = '결과는';
+                document.getElementedById('nm').innerHTML = list[rs]['name'];
+                document.getElementedById('nd').innerHTML = '입니다.';
+              }
+            }
+
+            function qcl(){
+
+              if (tt == 0 && rs < 64){
+                var is = document.aa;
+                is.src = 'main.jpg'; <!--질문1 첫 번째 사진-->
+                var iss = document.bb;
+                iss.src = 'main.jpg'; <!--질문1 두 번째 사진-->
+              }
+              else if (tt == 1 && rs < 64 && rs < 32){
+                var is = document.aa;
+                is.src = 'main.jpg'; <!-- 질문2 첫 번째 사진-->
+                var iss = document.bb;
+                iss.src = 'main.jpg'; <!-- 질문2 두 번째 사진-->
+              }
+              else if (tt == 2 && rs < 64 && rs < 32){
+                var is = document.aa;
+                is.src = 'main.jpg'; <!-- 질문3 첫 번째 사진-->
+                var iss = document.bb;
+                iss.src = 'main.jpg'; <!-- 질문3 두 번째 사진-->
+              }  else if (tt == 3 && rs < 64 && rs < 32){
+                  var is = document.aa;
+                  is.src = 'main.jpg'; <!-- 질문4 첫 번째 사진-->
+                  var iss = document.bb;
+                  iss.src = 'main.jpg'; <!-- 질문4 두 번째 사진-->
+                }
+                else if (tt == 4 && rs < 64 && rs < 32){
+                  var is = document.aa;
+                  is.src = 'main.jpg'; <!-- 질문5 첫 번째 사진-->
+                  var iss = document.bb;
+                  iss.src = 'main.jpg'; <!-- 질문5 두 번째 사진-->
+                }
+                else if (tt == 5 && rs < 64 && rs < 32){
+                  var is = document.aa;
+                  is.src = 'main.jpg'; <!-- 질문6 첫 번째 사진-->
+                  var iss = document.bb;
+                  iss.src = 'main.jpg'; <!-- 질문6 두 번째 사진-->
+                }
+                else if ( tt == 6 && rs < 64 && rs < 32){
+                  var is = document.aa;
+                  is. src = '';
+                  var rpp = document. rsp;
+                  if (rs % 64 == 0){
+                    rpp.src = 'main.jpg'; <!--결과1-->
+                  }
+                  if (rs % 64 == 1){
+                    rpp.src = 'main.jpg'; <!--결과2-->
+                  }
+                  if (rs % 64 == 2){
+                    rpp.src = 'main.jpg'; <!--결과3-->
+                  }
+                  if (rs % 64 == 3){
+                    rpp.src = 'main.jpg'; <!--결과4-->
+                  }
+                  if (rs % 64 == 4){
+                    rpp.src = 'main.jpg'; <!--결과5-->
+                  }
+                  if (rs % 64 == 5){
+                    rpp.src = 'main.jpg'; <!--결과6-->
+                  }
+                  if (rs % 64 == 6){
+                    rpp.src = 'main.jpg'; <!--결과7-->
+                  }
+                  if (rs % 64 == 7){
+                    rpp.src = 'main.jpg'; <!--결과8-->
+                  }
+                  if (rs % 64 == 8){
+                    rpp.src = 'main.jpg'; <!--결과9-->
+                  }
+                  if (rs % 64 == 9){
+                    rpp.src = 'main.jpg'; <!--결과10-->
+                  }
+                  if (rs % 64 == 10){
+                    rpp.src = 'main.jpg'; <!--결과11-->
+                  }
+                  if (rs % 64 == 11){
+                    rpp.src = 'main.jpg'; <!--결과12-->
+                  }
+                  if (rs % 64 == 12){
+                    rpp.src = 'main.jpg'; <!--결과13-->
+                  }
+                  if (rs % 64 == 13){
+                    rpp.src = 'main.jpg'; <!--결과14-->
+                  }
+                  if (rs % 64 == 14){
+                    rpp.src = 'main.jpg'; <!--결과15-->
+                  }
+                  if (rs % 64 == 15){
+                    rpp.src = 'main.jpg'; <!--결과16-->
+                  }
+                  if (rs % 64 == 16){
+                    rpp.src = 'main.jpg'; <!--결과17-->
+                  }
+                  if (rs % 64 == 17){
+                    rpp.src = 'main.jpg'; <!--결과18-->
+                  }
+                  if (rs % 64 == 18){
+                    rpp.src = 'main.jpg'; <!--결과19-->
+                  }
+                  if (rs % 64 == 19){
+                    rpp.src = 'main.jpg'; <!--결과20-->
+                  }
+                  if (rs % 64 == 20){
+                    rpp.src = 'main.jpg'; <!--결과21-->
+                  }
+                  if (rs % 64 == 21){
+                    rpp.src = 'main.jpg'; <!--결과22-->
+                  }
+                  if (rs % 64 == 22){
+                    rpp.src = 'main.jpg'; <!--결과23-->
+                  }
+                  if (rs % 64 == 23){
+                    rpp.src = 'main.jpg'; <!--결과24-->
+                  }
+                  if (rs % 64 == 24){
+                    rpp.src = 'main.jpg'; <!--결과25-->
+                  }
+                  if (rs % 64 == 25){
+                    rpp.src = 'main.jpg'; <!--결과26-->
+                  }
+                  if (rs % 64 == 26){
+                    rpp.src = 'main.jpg'; <!--결과27-->
+                  }
+                  if (rs % 64 == 27){
+                    rpp.src = 'main.jpg'; <!--결과28-->
+                  }
+                  if (rs % 64 == 28){
+                    rpp.src = 'main.jpg'; <!--결과29-->
+                  }
+                  if (rs % 64 == 29){
+                    rpp.src = 'main.jpg'; <!--결과30-->
+                  }
+                }
+            }
+    </script>
+
+    <div class='container'>
+      <div class='jumbotron'>
+        <div class='text-center'>
+          <h2 id='qs'>질문1</h2>
+          <h1 id='nm'></h1>
+          <h2 id='nd'></h2>
+        </div>
+        <div class='row'>
+          <div class='text-center'>
+            <br>
+            <br>
+            <div class='col-lg-6'>
+              <div id='aa1' style='display:block'>
+                <img name='aa' src'main.jpg' height='300' class='img-rounded' oneclick=
+                'c11();qqc();qcl();favmc();'>
+              </div>
+            </div>
+            <div class='col-lg-6'>
+              <div id='bb1' style='display:block'>
+                <img name='bb' src'main.jpg' height='300' class='img rounded' oneclick= 'c12(
+                ;qqc();qlc();favmc();'>
+              </div>
+              <div class="text-left">
+                  <h5 id="det"></h5>
+                  <h5 id="pct"></h5>
+                </div>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div id="lkrs" style="display:none">
+
+          <div class="container">
+            <div class="jumbotron">
+              <div class="text-center">
+              <h2 id="lqs">당신의 궁합은</h2>
+              <h1 id="lpct"></h1>
+              <h2 id="lnd">입니다.</h2>
+
+                </div>
+                <div class="row">
+                  <div class="text-center">
+                  <br>
+                  <br>
+
+                  <div class="col-lg-6">
+
+                      <img name="rsp1" src="" height="200" class="img-rounded">
+                  </div>
+                  <br>
+                  <div class="text-left">
+                  <h5 id="lrs"></h5>
+                  </div>
+                  <br>
+                  <div class="col-lg-6">
+                      <img name="rsp2" src="" height="200" class="img-rounded">
+                      <div class="text-left">
+                      <h5 id="det"></h5>
+                      <h5 id="pct"></h5>
+                    </div>
+                      <br><br>
+                    </div>
+                  </div>
+              </div>
+                </div>
+            </div>
+        </div>
+        <script type='text/javascript'>
+
+          var list = [{'code':'m00000','name':'결과1','detail':'결과설명','pic':'main.jpg','num':0},
+          {'code':'m00001','name':'결과2','detail':'결과설명','pic':'main.jpg','num':1},
+          {'code':'m00002','name':'결과1','detail':'결과설명','pic':'main.jpg','num':2},
+          {'code':'m00003','name':'결과1','detail':'결과설명','pic':'main.jpg','num':3},
+          {'code':'m00004','name':'결과1','detail':'결과설명','pic':'main.jpg','num':4},
+          {'code':'m00005','name':'결과1','detail':'결과설명','pic':'main.jpg','num':5},
+          {'code':'m00006','name':'결과1','detail':'결과설명','pic':'main.jpg','num':6},
+          {'code':'m00007','name':'결과1','detail':'결과설명','pic':'main.jpg','num':7},
+          {'code':'m00008','name':'결과1','detail':'결과설명','pic':'main.jpg','num':8},
+          {'code':'m00009','name':'결과1','detail':'결과설명','pic':'main.jpg','num':9},
+          {'code':'m00010','name':'결과1','detail':'결과설명','pic':'main.jpg','num':10},
+          {'code':'m00011','name':'결과1','detail':'결과설명','pic':'main.jpg','num':11},
+          {'code':'m00012','name':'결과1','detail':'결과설명','pic':'main.jpg','num':12},
+          {'code':'m00013','name':'결과1','detail':'결과설명','pic':'main.jpg','num':13},
+          {'code':'m00014','name':'결과1','detail':'결과설명','pic':'main.jpg','num':14},
+          {'code':'m00015','name':'결과1','detail':'결과설명','pic':'main.jpg','num':15},
+          {'code':'m00016','name':'결과1','detail':'결과설명','pic':'main.jpg','num':16},
+          {'code':'m00017','name':'결과1','detail':'결과설명','pic':'main.jpg','num':17},
+          {'code':'m00018','name':'결과1','detail':'결과설명','pic':'main.jpg','num':18},
+          {'code':'m00019','name':'결과1','detail':'결과설명','pic':'main.jpg','num':19}]
+        </script>
+        <br>
+        <br>
+        <adress>
+          <div class='text=center'>
+            <p>제작: 오이가 유명해요?</p>
+            <p>문의:
+              <a href='mailto:#'>
+                <u>brouny135@gmail.com</u>
+              </a>
+            </p>
+            <a href='http://www.youtube.com/user/Sunbaaking'>
+              <strong>선바 유튜브 구독하기</strong>
+            </a>
+          </div>
+        </adress>
+  </body>
+</html>
